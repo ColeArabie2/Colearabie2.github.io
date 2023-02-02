@@ -37,7 +37,13 @@ drawCircle();
 drawCircle();
 drawCircle();
 drawCircle();
+var loopsCompleted = 0;
+while (loopsCompleted < 10){
+    loopsCompleted++
+}
+for (var loopsCompleted = 0; loopsCompleted < 10; loopsCompleted++) {
 
+}
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -56,10 +62,18 @@ physikz.updatePosition(circles[3]);
 physikz.updatePosition(circles[4]);
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-           
+           game.checkCirclePosition(circles[0])
+           game.checkCirclePosition(circles[1])
+           game.checkCirclePosition(circles[2])
+           game.checkCirclePosition(circles[3])
+           game.checkCirclePosition(circles[4])
+
 
             // TODO 9 : Iterate over the array
-           
+           for (var i = 0; i < myArray.length; i++) {
+   var eachValue = myArray[i];
+   
+}
             
         }
     

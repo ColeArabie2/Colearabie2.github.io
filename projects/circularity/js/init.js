@@ -24,14 +24,14 @@ var init = function (window) {
         var circles = [];
 
         // TODO 2 : Create a function that draws a circle 
-        var drawCircle = function() {
-            circle = draw.randomCircleArea(canvas, true, true, "#999" , 2)
-            physikz.addRandomVelocity(circle, canvas)
-            circles.push(circle);
-            view.addChild(circle);
-        }
+ circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
+ physikz.addRandomVelocity(circle, canvas);
+ view.addChild(circle);
+ circles.push(circle);
+
 
         // TODO 3 / 7 : Call the drawCircle() function 
+        nameOfFunction(drawCircle);
 drawCircle();
 drawCircle();
 drawCircle();
@@ -44,6 +44,7 @@ while (loopsCompleted < 10){
 for (var loopsCompleted = 0; loopsCompleted < 10; loopsCompleted++) {
 
 }
+
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////

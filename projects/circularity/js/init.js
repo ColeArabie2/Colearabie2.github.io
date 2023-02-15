@@ -67,11 +67,11 @@ for (var loopsCompleted = 0; loopsCompleted < 10; loopsCompleted++) {
             }
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-           game.checkCirclePosition(Circle)
-           game.checkCirclePosition(Circle)
-           game.checkCirclePosition(Circle)
-           game.checkCirclePosition(Circle)
-           game.checkCirclePosition(Circle)
+           game.checkCirclePosition(Circle[0]);
+           game.checkCirclePosition(Circle[1]);
+           game.checkCirclePosition(Circle[2]);
+           game.checkCirclePosition(Circle[3]);
+           game.checkCirclePosition(Circle[4]);
 
 
             // TODO 9 : Iterate over the array

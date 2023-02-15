@@ -24,24 +24,22 @@ var init = function (window) {
         var circles = [];
 
         // TODO 2 : Create a function that draws a circle 
-        var drawCircle = funcion() {
+        function drawCircle() {
             circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
             physikz.addRandomVelocity(circle, canvas, 10, 10);
             view.addChild(circle);
             circles.push(circle);
-}
+    }
         // TODO 3 / 7 : Call the drawCircle() function 
-        nameOfFunction(drawCircle);
-drawCircle(1);
-drawCircle(2);
-drawCircle(3);
-drawCircle(4);
-drawCircle(5);
-var loopsCompleted = 0;
-while (loopsCompleted < 10){
-    loopsCompleted++
-}
-for (var loopsCompleted = 0; loopsCompleted < 10; loopsCompleted++) {
+      
+//drawCircle(1);
+//drawCircle(2);
+//drawCircle(3);
+//drawCircle(4);
+//drawCircle(5);
+
+for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++) {
+       drawCircle ([loopsCompleted]);
 
 }
 
@@ -58,7 +56,7 @@ for (var loopsCompleted = 0; loopsCompleted < 10; loopsCompleted++) {
             // TODO 4 : Update the circle's position //
             function update() {
                 // TODO 4 : Update the circle's position //
-           
+           function updatePosition();
                 physikz.updatePosition(Circle[0]);
                 physikz.updatePosition(Circle[1]);
                 physikz.updatePosition(Circle[2]);

@@ -56,18 +56,22 @@ for (var loopsCompleted = 0; loopsCompleted < 10; loopsCompleted++) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-physikz.updatePosition(circles[0]);
-physikz.updatePosition(circles[0]);
-physikz.updatePosition(circles[0]);
-physikz.updatePosition(circles[0]);
-physikz.updatePosition(circles[0]);
+            function update() {
+                // TODO 4 : Update the circle's position //
+           
+                physikz.updatePosition(Circle[0]);
+                physikz.updatePosition(Circle[1]);
+                physikz.updatePosition(Circle[2]);
+                physikz.updatePosition(Circle[3]);
+                physikz.updatePosition(Circle[4]);
+            }
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-           game.checkCirclePosition(eachCircle)
-           game.checkCirclePosition(eachCircle)
-           game.checkCirclePosition(eachCircle)
-           game.checkCirclePosition(eachCircle)
-           game.checkCirclePosition(eachCircle)
+           game.checkCirclePosition(Circle)
+           game.checkCirclePosition(Circle)
+           game.checkCirclePosition(Circle)
+           game.checkCirclePosition(Circle)
+           game.checkCirclePosition(Circle)
 
 
             // TODO 9 : Iterate over the array

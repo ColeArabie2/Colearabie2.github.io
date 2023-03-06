@@ -1,4 +1,4 @@
-var init = function (window) {
+var init = function (window){
     'use strict';
     var 
         draw = window.opspark.draw,
@@ -8,38 +8,45 @@ var init = function (window) {
         canvas = app.canvas, 
         view = app.view,
         fps = draw.fps('#000');
-        
     
+
     window.opspark.makeGame = function() {
         
         window.opspark.game = {};
         var game = window.opspark.game;
-        
+    }
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM SETUP ////////////////////////////
         ////////////////////////////////////////////////////////////
         
-        // TODO 1 : Declare and initialize our variables
-     var circles;
-     var circles = [];
+         // TODO 1: Declare our variables //
+  var circle;			
+  var circles = [];	
 
         // TODO 2 : Create a function that draws a circle 
-        var drawCircle = function() {
-            circle = draw.randomCircleInArea(canvas, true, true, "#999", 2) ;
-            physikz.addRandomVelocity(circle, canvas);
-            circles.push(circle);
-            view.addChild(circle);
-        }
+
+        // Code to draw a circle
+ circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
+ physikz.addRandomVelocity(circle, canvas);
+ view.addChild(circle);
+ circles.push(circle);
+
         // TODO 3 / 7 : Call the drawCircle() function 
-      drawCircle();
-      drawCircle();
-      drawCircle();
-      drawCircle();
-      drawCircle();
+      drawCircle(circle[0]);
+      drawCircle(circle[0]);
+      drawCircle(circle[0]);
+      drawCircle(circle[0]);
+      drawCircle(circle[0]);
 
+      var Circles = 0;
+      while (Circles < 10) {
+Circles++
+      }
+      for ( var Circles = 0; Circles < 10; Circles++){
 
+      }
 
-        ////////////////////////////////////////////////////////////
+     ////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
         
@@ -50,13 +57,24 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            function update() {
-                // TODO 4 : Update the circle's position //
+                physikz.updatePosition(circles[0]);
+                physikz.updatePosition(circles[1]);
+                physikz.updatePosition(circles[2]);
+                physikz.updatePosition(circles[3]);
+                physikz.updatePosition(circles[4]);
+            }
           
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-        
-            // TODO 9 : Iterate over the array
-          
+ game.checkCirclePosition(circle[0]);
+ game.checkCirclePosition(circle[1]);
+ game.checkCirclePosition(circle[2]);
+ game.checkCirclePosition(circle[3]);
+ game.checkCirclePosition(circle[4]);
+
+ // TODO 9 : Iterate over the array
+ for (var i = 0; i < C.length; i++) {
+    var eachValue = C[i];
+ }
 
             
 }
@@ -69,11 +87,19 @@ var init = function (window) {
         game.checkCirclePosition = function(circle) {
 
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
-           
+            if ( circle.x > canvas.width ) {
+                circle.x = 0;
+            }
+            
             
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-          
+canvas.width
+canvas.height
+
+circle.x
+circle.y
+circle.radius
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
         
@@ -90,9 +116,7 @@ var init = function (window) {
         game.update = update;
         
         app.addUpdateable(window.opspark.game);
-    }
-};
-
+    
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
     (typeof process.versions.node !== 'undefined')) {

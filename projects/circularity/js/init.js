@@ -34,6 +34,16 @@ var init = function (window){
         drawCircle();
         drawCircle();
         drawCircle();
+        // TODO 4 : Move your circles
+        physikz.updatePosition();
+ 	    physikz.updatePosition();
+ 	    physikz.updatePosition();
+ 	    physikz.updatePosition();
+ 	    physikz.updatePosition();
+
+
+
+
 
      ////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////

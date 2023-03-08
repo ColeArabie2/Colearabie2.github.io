@@ -35,11 +35,9 @@ var init = function (window){
         //drawCircle();
         //drawCircle();
         var loopsCompleted = 0;
-        while ( loopsCompleted < 10) {
-            loopsCompleted++
-        }
-        for (var loopsCompleted = 0; loopsCompleted < 10; loopsCompleted++){
-            
+       
+        for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++){
+            drawCircle([loopsCompleted])
         }
 
 

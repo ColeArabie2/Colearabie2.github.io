@@ -29,12 +29,12 @@ var init = function (window){
         view.addChild(circle);
         circle.push(circle);
         // TODO 3 / 7 : Call the drawCircle() function 
-       drawCircle();
-       drawCircle();
-       drawCircle();
-       drawCircle();
-       drawCircle();
-       
+      // drawCircle();
+       //drawCircle();
+       //drawCircle();
+       //drawCircle();
+       //drawCircle();
+
 
      ////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -47,9 +47,18 @@ var init = function (window){
         */
         function update() {
             // TODO 4 : Update the circle's position //
-          
+          physikz.updatePosition(circle);
+          physikz.updatePosition(circle);
+          physikz.updatePosition(circle);
+          physikz.updatePosition(circle);
+          physikz.updatePosition(circle);
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-
+game.checkCirclePosition(circle);
+game.checkCirclePosition(circle);
+game.checkCirclePosition(circle);
+game.checkCirclePosition(circle);
+game.checkCirclePosition(circle);
+game.checkCirclePosition(circle);
 
             // TODO 9 : Iterate over the array
  
